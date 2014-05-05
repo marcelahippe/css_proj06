@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.0/jquery.validate.js"></script>	
+	<script type="text/javascript" src="js/validate.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".btn-menu-mobile").on("click",function(e){
+				$(".main-menu").toggleClass("mobile-menu");
+				e.preventDefault();
+			})
+		})
+	</script>
+
+	<title>Projeto #06 - Formulário</title>
+</head>
+
+<body>
+
+	<header class="header">
+		<div class="navs">
+			<div class="container">
+				<a href="" class="logo" aria-label="Ir para página inicial">
+					<img src="css/img/brand.png" alt="Shopping Locaweb">
+				</a>
+				<nav class="main-menu">
+					<ul>
+						<li><a href="">INFRAESTRUTURA</a></li>
+						<li><a href="">CONECTIVIDADE</a></li>
+						<li><a href="">SEGURANÇA</a></li>
+						<li><a href="">GESTÃO</a></li>
+						<li><a href="" class="active">CONTATO</a></li>
+					</ul>
+				</nav>
+	
+				<a href="" class="btn-menu-mobile">MENU</a>
+
+			</div><!-- /navs -->
+		</div><!-- /container -->
+	</header>
+
+	<div class="main">
+		<div class="container">
+
+			<h1>Entre em contato</h1>
+
+			<form action="" class="validate" id="form-msg">
+
+				<fieldset>
+
+						<div class="form-field">
+							<label for="nome">Nome:</label>
+							<input type="text" id="nome" placeholder="Diga seu nome">
+						</div>
+
+						<div class="form-field">
+							<label for="email">E-mail:</label>
+							<input type="email" id="email" placeholder="Use e-mail válido" class="required email" aria-required="true">
+						</div>
+
+						<div class="form-field">
+							<label for="msg">Mensagem:</label>
+							<textarea id="msg" rows="10" cols="30" placeholder="Fala que eu te escuto ;)" maxlength="10" ></textarea>
+						</div>
+
+						<input type="submit" value="Enviar mensagem">
+
+				</fieldset>
+
+			</form>
+
+		</div><!-- /container -->
+	</div><!-- /main -->
+
+	<footer>
+		<div class="container">
+			<hr>
+			<p>Mais um projeto que fiz usando tudo que aprendi com o <a href="https://www.facebook.com/deividmarquess?fref=ts" target="_blank">Deivid Marques</a>, <a href="https://twitter.com/diegoeis" target="_blank">Diego Eis</a> e o <a href="http://tableless.com.br" target="_blank">Tableless</a>. Muito obrigada, caras!</p>
+		</div>
+	</footer>
+
+</body>
+</html>
